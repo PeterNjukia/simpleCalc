@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h4>Simple Arithmetic Calculator</h4>
+    <input type="text" id="result" disabled>
+    <div>
+      <input type="button" value="1" class="button" onclick="appendNeed(1)">
+      <input type="button" value="2" class="button" onclick="appendNeed(2)">
+      <input type="button" value="3" class="button" onclick="appendNeed(3)">
+      <input type="button" value="+" class="button" onclick="appendNeed('+')">
+    </div>
+    <div>
+      <input type="button" value="4" class="button" onclick="appendNeed(4)">
+      <input type="button" value="5" class="button" onclick="appendNeed(5)">
+      <input type="button" value="6" class="button" onclick="appendNeed(6)">
+      <input type="button" value="-" class="button" onclick="appendNeed('-')">
+    </div>
+    <div>
+      <input type="button" value="7" class="button" onclick="appendNeed(7)">
+      <input type="button" value="8" class="button" onclick="appendNeed(8)">
+      <input type="button" value="9" class="button" onclick="appendNeed(9)">
+      <input type="button" value="*" class="button" onclick="appendNeed('*')">
+    </div>
+    <div>
+      <input type="button" value="0" class="button" onclick="appendNeed(0)">
+      <input type="button" value="." class="button" onclick="appendNeed('.')">
+      <input type="button" value="=" class="button" onclick="calculate()">
+      <input type="button" value="/" class="button" onclick="appendNeed('/')">
+    </div>
+    <div>
+      <input type="button" value="Clear" onclick="clearResult()">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
